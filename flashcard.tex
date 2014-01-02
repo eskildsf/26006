@@ -1,20 +1,26 @@
 \documentclass[custom,grid]{flashcards}
-
-\usepackage[T1]{fontenc}
+\usepackage[T1]{fontenc} % better support for characters with accents and non-English characters
+\usepackage[utf8]{inputenc} % tegns�t
 \usepackage[danish]{babel}
-\usepackage[pdftex]{graphicx}
+%\usepackage[latin1]{inputenc}
+\usepackage[pdftex]{graphicx} % figurer
 \usepackage{amsfonts}
 \usepackage{amsmath}
-%\usepackage{MinionPro}
+\usepackage{MinionPro}
 \usepackage{tikz}
 \usetikzlibrary{calc,patterns,decorations.pathmorphing,decorations.markings,matrix,arrows}
-\usepackage{mathtools}
-\usepackage{bm}
+\usepackage{mathtools} % udvidet matematisk typesetting pakke
+\usepackage{bm} % til bold text
 \usepackage{mhchem}
 \usepackage{chemmacros}
 \usepackage{chemfig}
 \usepackage{color}
 \usepackage{modiagram}
+\usepackage{tabularx}
+
+\usepackage{epstopdf}
+\epstopdfDeclareGraphicsRule{.tiff}{png}{.png}{convert #1 \OutputFile}
+\AppendGraphicsExtensions{.tiff}
 
 \cardfrontstyle[\large]{headings}
 \cardbackstyle{plain}
@@ -28,14 +34,19 @@
 % Anvendelse
 % Trend
 % Teori
-\input{flashcardk09}
-\input{flashcardk10}
-\input{flashcardk11}
-\input{flashcardk12}
-\input{flashcardk13}
-\input{flashcardk14}
-\input{flashcardk15}
-\input{flashcardk16}
-\input{flashcardk17}
-\input{flashcardk18}
+%\input{chapter/09}
+%\input{chapter/10}
+%\input{chapter/11}
+%\input{chapter/12}
+%\input{chapter/13}
+%\input{chapter/14}
+%\input{chapter/15}
+%\input{chapter/16}
+%\input{chapter/17}
+%\input{chapter/18}
+\input{chapter/19}
+\input{chapter/20}
+\input{chapter/21}
+\input{chapter/22}
+\input{chapter/23}
 \end{document}
